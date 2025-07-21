@@ -1,4 +1,18 @@
 <script lang="ts">
+	import {
+		claude,
+		figma,
+		framer,
+		ga,
+		javascript,
+		motion,
+		notion,
+		slack,
+		stripe,
+		svelteIcon,
+		webflow
+	} from './TechLogos.svelte';
+
 	const services = [
 		'Product Design',
 		'User Research',
@@ -18,17 +32,19 @@
 		'Real Estate',
 		'Entertainment'
 	];
+
 	const stacks = [
-		'Figma',
-		'Svelte',
-		'Sveltekit',
-		'Webflow',
-		'Framer',
-		'Motion.dev',
-		'GSAP',
-		'Slack',
-		'Notion',
-		'Javscript'
+		{ icon: figma, name: 'Figma' },
+		{ icon: svelteIcon, name: 'Svelte & Sveltekit' },
+		{ icon: webflow, name: 'Webflow' },
+		{ icon: framer, name: 'Framer' },
+		{ icon: motion, name: 'Motion.dev' },
+		{ icon: slack, name: 'Slack' },
+		{ icon: notion, name: 'Notion' },
+		{ icon: javascript, name: 'Javascript' },
+		{ icon: stripe, name: 'Stripe' },
+		{ icon: claude, name: 'Claude' },
+		{ icon: ga, name: 'Google Analytics' }
 	];
 </script>
 
@@ -121,14 +137,7 @@
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
-									d="M7 2.91667V11.0833"
-									stroke="#737373"
-									stroke-width="1.5"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M2.91663 7H11.0833"
+									d="M11.6667 3.5L5.25004 9.91667L2.33337 7"
 									stroke="#737373"
 									stroke-width="1.5"
 									stroke-linecap="round"
@@ -147,29 +156,8 @@
 				<div class="text-content-default grid grid-cols-3 gap-y-6 text-base/none font-normal">
 					{#each stacks as stack}
 						<p class="flex items-center gap-1.5">
-							<svg
-								width="14"
-								height="14"
-								viewBox="0 0 14 14"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M7 2.91667V11.0833"
-									stroke="#737373"
-									stroke-width="1.5"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M2.91663 7H11.0833"
-									stroke="#737373"
-									stroke-width="1.5"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-							{stack}
+							{@render stack.icon()}
+							{stack.name}
 						</p>
 					{/each}
 				</div>

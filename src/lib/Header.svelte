@@ -29,9 +29,10 @@
 				<p
 					class="text-content-default border-stroke-subtle mb-3 inline-flex min-h-8 items-center gap-1.5 rounded-full border pr-3 pl-2 text-sm/none font-normal"
 				>
-					<span class="flex rounded-full bg-[var(--green-100)] p-1"
-						><span class="flex h-2 w-2 rounded-full bg-[var(--green-200)]"></span></span
-					>
+					<span class="relative z-10 flex h-2 w-2 rounded-full bg-[var(--green-200)]">
+						<span class="pulse absolute z-1 h-full w-full rounded-full bg-[var(--green-200)]"
+						></span>
+					</span>
 					Available for Work
 				</p>
 
@@ -58,3 +59,16 @@
 		</section>
 	</section>
 </header>
+
+<style>
+	.pulse {
+		animation: pulseAnimation 1.5s ease-out infinite;
+	}
+
+	@keyframes pulseAnimation {
+		100% {
+			scale: 2.25;
+			opacity: 0;
+		}
+	}
+</style>

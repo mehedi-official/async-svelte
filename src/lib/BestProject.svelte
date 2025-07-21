@@ -34,7 +34,7 @@
 
 		<a
 			href="/"
-			class="text-content-default inline-flex h-full items-center gap-2.5 px-12 text-base/none font-normal tracking-wider underline underline-offset-2"
+			class="text-content-default inline-flex h-full items-center gap-2.5 px-12 text-base/none font-normal tracking-wider underline-offset-2 hover:underline"
 			>SEE ALL PROJECTS</a
 		>
 	</div>

@@ -12,7 +12,7 @@
 		{ name: 'dm', label: 'DM Me' },
 		{ name: 'social', label: 'Social Media' }
 	];
-	let activeTab = $state(tablist[1].name);
+	let activeTab = $state(tablist[0].name);
 
 	function handleTabChange(tabName: Tabs): void {
 		activeTab = tabName;
