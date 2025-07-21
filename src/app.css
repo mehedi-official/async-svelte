@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@layer base {
+	:root {
+		--white: oklch(1 0 0);
+		--yellow-100: oklch(0.95 0.19 114.57);
+		--black-100: oklch(0.26 0 0);
+		--black-200: oklch(0.16 0 0);
+		--gray-100: oklch(0.98 0 0);
+		--gray-200: oklch(0.89 0 0);
+		--gray-300: oklch(0.73 0 0);
+		--gray-400: oklch(0.56 0 0);
+		--green-100: oklch(0.94 0.04 170.34);
+		--green-200: oklch(0.75 0.15 162.87);
+	}
+
+	[data-theme='dark'] {
+		--white: oklch(0.16 0 0);
+		--yellow-100: oklch(0.95 0.19 114.57);
+		--black-100: oklch(0.46 0 0);
+		--black-200: oklch(0.97 0 0);
+		--gray-100: oklch(0.22 0 0);
+		--gray-200: oklch(0.26 0 0);
+		--gray-300: oklch(0.73 0 0);
+		--gray-400: oklch(0.56 0 0);
+		--green-100: oklch(0.3 0.04 167.13);
+		--green-200: oklch(0.59 0.13 159.85);
+	}
+
+	* {
+		@apply transition-colors duration-300 ease-in-out;
+	}
+}
+
+@theme inline {
+	--color-content-default: var(--black-200);
+	--color-content-subtle: var(--gray-300);
+	--color-content-intense: var(--gray-400);
+	--color-stroke-default: var(--black-100);
+	--color-stroke-dimmed: var(--gray-100);
+	--color-stroke-subtle: var(--gray-200);
+	--color-surface-default: var(--white);
+	--color-primary: var(--yellow-100);
+}
+
+@layer components {
+	:root {
+		--text-btn: var(--black-200);
+	}
+
+	.btn {
+		@apply bg-primary flex h-16 cursor-pointer items-center justify-center px-6 py-5 text-[var(--text-btn)];
+	}
+
+	.btn-accent {
+		@apply bg-content-default text-surface-default inline-flex min-h-9 items-center rounded-full px-3.5 text-sm/none font-semibold tracking-tighter underline-offset-2 hover:underline;
+	}
+}
