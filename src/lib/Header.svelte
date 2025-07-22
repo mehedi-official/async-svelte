@@ -13,6 +13,9 @@
 
 <header>
 	<Navbar activePage="home" />
+	<!-- <div class="fixed top-0 bg-surface-default">
+		<Navbar activePage="home" />
+	</div> -->
 
 	<section class="grid grid-cols-[1.35fr_1fr]">
 		<section class="p-12">

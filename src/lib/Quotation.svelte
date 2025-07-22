@@ -4,16 +4,14 @@
 	import toast, { Toaster } from 'svelte-5-french-toast';
 
 	const handleEnhance: SubmitFunction = async (e) => {
-		
-
 		return ({ result }) => {
-	        if (result.type === "success") {
+			if (result.type === 'success') {
 				console.log(result);
 				toast.success(result.data?.message, { duration: 6000 });
 				e.formElement.reset();
 			}
-	    }
-	}
+		};
+	};
 </script>
 
 <Toaster />
