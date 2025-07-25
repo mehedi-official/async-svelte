@@ -9,7 +9,7 @@
 </script>
 
 <section
-	class="*:border-stroke-default *:nth-[3n+1]:border-stroke-default grid grid-cols-3 *:border-y *:border-r *:nth-[3n+1]:border-l *:nth-[n+4]:border-t-0"
+	class="*:border-stroke-default laptop:*:nth-[3n+1]:border-stroke-default laptop:grid-cols-3 laptop:*:not-first:border-t laptop:*:not-first:border-l-0 grid *:border *:border-t-0 *:first:border-t"
 >
 	{#each dmList as dm}
 		<article

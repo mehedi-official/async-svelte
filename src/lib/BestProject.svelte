@@ -108,7 +108,7 @@
 <section>
 	<div class="border-stroke-default flex h-16 items-center justify-between border-y font-mono">
 		<h3
-			class="bg-stroke-default inline-flex h-full items-center gap-2.5 px-12 text-base/none font-normal tracking-wider text-[var(--white)]"
+			class="bg-stroke-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-nowrap text-[var(--white)]"
 		>
 			BEST PROJECTS
 			<svg
@@ -136,13 +136,16 @@
 		</h3>
 
 		<a
-			href="/"
-			class="text-content-default inline-flex h-full items-center gap-2.5 px-12 text-base/none font-normal tracking-wider underline-offset-2 hover:underline"
+			href="/projects"
+			class="text-content-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-nowrap underline-offset-2 hover:underline"
 			>SEE ALL PROJECTS</a
 		>
 	</div>
 
-	<section {@attach observe} class="grid grid-cols-[1fr_1.6fr] items-center gap-36 px-12 py-20">
+	<section
+		{@attach observe}
+		class="laptop:grid-cols-[1fr_1.6fr] laptop:gap-36 laptop:px-12 grid items-center gap-12 px-4 py-20"
+	>
 		<section>
 			{#each projects as { title, description, website_link, design_link, isActive }, idx}
 				<article

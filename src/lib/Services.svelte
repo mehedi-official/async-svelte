@@ -51,7 +51,7 @@
 <section>
 	<div class="border-stroke-default h-16 border-y font-mono">
 		<h3
-			class="bg-stroke-default inline-flex h-full items-center gap-2.5 px-12 text-base/none font-normal tracking-wider text-[var(--white)]"
+			class="bg-stroke-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-[var(--white)]"
 		>
 			SERVICES
 			<svg
@@ -79,19 +79,19 @@
 		</h3>
 	</div>
 
-	<section class="mx-auto max-w-4xl py-16">
+	<section class="mx-auto max-w-4xl px-4 py-16">
 		<p class="text-content-intense mb-8 text-base font-normal">
 			We design with intent - sharp, functional, and user-first. No fluff, just digital experiences
 			that feel right and work fast. From startups to market leaders, we've done this for over 10
 			years for companies in a wide range of categories, using the best and latest tools.
 		</p>
 
-		<div class="grid gap-10">
+		<div class="laptop:gap-10 grid gap-16">
 			<article>
 				<p class="text-content-intense mb-4 text-sm/none font-normal">FOCUS</p>
 
 				<div
-					class="text-content-default grid grid-cols-3 justify-start justify-items-start gap-x-1 gap-y-6 text-base/none font-normal"
+					class="text-content-default laptop:grid-cols-3 grid grid-cols-2 justify-start justify-items-start gap-x-1 gap-y-6 text-base/none font-normal"
 				>
 					{#each services as service}
 						<p class="flex items-center gap-1.5">
@@ -126,7 +126,9 @@
 			<article>
 				<p class="text-content-intense mb-4 text-sm/none font-normal">INDUSTRIES</p>
 
-				<div class="text-content-default grid grid-cols-3 gap-y-6 text-base/none font-normal">
+				<div
+					class="text-content-default laptop:grid-cols-3 grid grid-cols-2 gap-y-6 text-base/none font-normal"
+				>
 					{#each industries as industry}
 						<p class="flex items-center gap-1.5">
 							<svg
@@ -153,7 +155,9 @@
 			<article>
 				<p class="text-content-intense mb-4 text-sm/none font-normal">TOOLS & STACK</p>
 
-				<div class="text-content-default grid grid-cols-3 gap-y-6 text-base/none font-normal">
+				<div
+					class="text-content-default laptop:grid-cols-3 grid grid-cols-2 gap-y-6 text-base/none font-normal"
+				>
 					{#each stacks as stack}
 						<p class="flex items-center gap-1.5">
 							{@render stack.icon()}

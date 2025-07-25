@@ -33,20 +33,20 @@
 	<Navbar activePage="contact" />
 
 	<section
-		class="border-stroke-default grid h-[calc(100dvh-64px)] grid-cols-2 overflow-hidden border-b"
+		class="border-stroke-default laptop:h-[calc(100dvh-64px)] laptop:grid-cols-2 grid overflow-hidden border-b"
 	>
 		<section class="relative">
 			<div class="h-full"><img src={contact_banner} class="h-full" alt="Contact Banner" /></div>
 
 			<h1
-				class="bg-primary absolute top-0 left-0 mt-5 ml-9 inline-flex p-2 text-sm/none font-medium tracking-wider text-[var(--text-btn)]"
+				class="bg-primary laptop:ml-9 absolute top-0 left-0 mt-5 ml-4 inline-flex p-2 text-sm/none font-medium tracking-wider text-[var(--text-btn)]"
 			>
 				CONTACT WITH ME
 			</h1>
 		</section>
 
 		<section class="border-stroke-default overflow-y-scroll border-l">
-			<div class="grid gap-10 px-6 py-12">
+			<div class="laptop:px-6 grid gap-10 px-3 py-12">
 				<TabList {tablist} {activeTab} onTabChange={handleTabChange} />
 				{@render tabContent(activeTab)}
 			</div>

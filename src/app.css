@@ -41,6 +41,7 @@
 	--color-stroke-subtle: var(--gray-200);
 	--color-surface-default: var(--white);
 	--color-primary: var(--yellow-100);
+	--breakpoint-laptop: 64rem;
 }
 
 @layer components {

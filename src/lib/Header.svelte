@@ -17,8 +17,8 @@
 		<Navbar activePage="home" />
 	</div> -->
 
-	<section class="grid grid-cols-[1.35fr_1fr]">
-		<section class="p-12">
+	<section class="laptop:grid-cols-[1.35fr_1fr] grid">
+		<section class="laptop:p-12 px-4 py-12">
 			<div class="mb-9 inline-grid gap-2 text-sm/none font-normal">
 				{#each information as [k, v]}
 					<div class="flex items-center gap-2">
@@ -40,12 +40,12 @@
 				</p>
 
 				<h1
-					class="text-content-default mb-5 max-w-[80%] text-5xl/tight font-semibold tracking-tighter"
+					class="text-content-default laptop:max-w-[80%] laptop:text-5xl/tight mb-5 text-4xl/snug font-semibold tracking-tighter"
 				>
 					I help businesses build world-class landing page & websites using Svelte, Framer, Webflow
 				</h1>
 
-				<a href="/" class="btn-accent">Work with me</a>
+				<a href="/contact" class="btn-accent">Work with me</a>
 			</article>
 		</section>
 

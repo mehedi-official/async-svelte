@@ -51,20 +51,20 @@
 	<Navbar activePage="faq" />
 
 	<section
-		class="border-stroke-default grid h-[calc(100dvh-64px)] grid-cols-2 overflow-hidden border-b"
+		class="border-stroke-default laptop:h-[calc(100dvh-64px)] laptop:grid-cols-2 grid overflow-hidden border-b"
 	>
 		<section class="relative">
 			<div class="h-full"><img src={faq_banner} class="h-full" alt="FAQ Banner" /></div>
 
 			<h1
-				class="bg-primary absolute top-0 left-0 mt-5 ml-9 inline-flex p-2 text-sm/none font-medium tracking-wider text-[var(--text-btn)]"
+				class="bg-primary laptop:ml-9 absolute top-0 left-0 mt-5 ml-4 inline-flex p-2 text-sm/none font-medium tracking-wider text-[var(--text-btn)]"
 			>
 				FREQUENTLY ASKED QUESTIONS
 			</h1>
 		</section>
 
 		<section class="border-stroke-default overflow-y-scroll border-l">
-			<div class="grid gap-2 px-6 py-12">
+			<div class="laptop:px-6 grid gap-2 px-4 py-12">
 				{#each questions as { question, answer, isActive }, idx}
 					<button class="contents" onclick={() => handleAccordian(idx, isActive)}>
 						<article
@@ -76,7 +76,7 @@
 							<div class="flex items-center justify-between">
 								<h2
 									class={[
-										'text-base/none tracking-tight underline-offset-2',
+										'text-left text-base tracking-tight underline-offset-2',
 										isActive
 											? 'font-medium text-[var(--text-btn)] underline'
 											: 'text-content-default font-normal'

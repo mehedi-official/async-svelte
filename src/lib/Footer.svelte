@@ -1,12 +1,14 @@
 <footer class="border-stroke-default flex h-16 items-center justify-between border-y font-mono">
-	<p class="text-content-intense px-6 text-sm/none font-normal tracking-tighter uppercase">
+	<p class="text-content-intense laptop:px-6 px-4 text-sm font-normal tracking-tighter uppercase">
 		© All rights reserved {new Date().getFullYear()}. Made by
 		<span class="text-content-default cursor-pointer underline-offset-2 hover:underline"
 			>Mehedi Hasan</span
 		>
 	</p>
 
-	<section class="text-content-default flex h-full text-sm/none font-normal tracking-wider">
+	<section
+		class="text-content-default laptop:flex hidden h-full text-sm/none font-normal tracking-wider"
+	>
 		<a
 			href="/"
 			class="hover:bg-primary border-stroke-default flex items-center border-l px-6 hover:text-[var(--text-btn)]"

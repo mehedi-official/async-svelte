@@ -8,10 +8,11 @@
 		{ icon: mail, label: 'Dribbble', linkText: 'Visit My Dribbble', href: 'telegram.com' },
 		{ icon: whatsapp, label: 'Behance', linkText: 'Visit My Behance', href: 'telegram.com' }
 	];
+	// *:border-stroke-default *:nth-[3n+1]:border-stroke-default grid laptop:grid-cols-3 *:border-y *:border-r *:nth-[3n+1]:border-l *:nth-[n+4]:border-t-0
 </script>
 
 <section
-	class="*:border-stroke-default *:nth-[3n+1]:border-stroke-default grid grid-cols-3 *:border-y *:border-r *:nth-[3n+1]:border-l *:nth-[n+4]:border-t-0"
+	class="laptop:grid-cols-3 *:border-stroke-default laptop:*:border-y laptop:*:nth-[n+4]:border-t-0 laptop:*:border-l-0 laptop:*:nth-[3n-2]:border-l grid *:border *:border-t-0 *:first:border-t"
 >
 	{#each social_media as social}
 		<article
