@@ -11,7 +11,7 @@
 		<div class="mb-10">
 			<h1 class="text-content-default mb-2 text-5xl font-medium tracking-tight">Projects</h1>
 			<p class="text-content-intense max-w-108 text-base font-normal">
-				Dive into a showcase of our latest work, meticulously crafted to inspire and elevate.
+				Dive into a showcase of my latest work, meticulously crafted to inspire and elevate.
 			</p>
 		</div>
 

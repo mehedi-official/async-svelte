@@ -13,8 +13,9 @@
 			title: 'Remotin',
 			description:
 				'Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.',
-			website_link: '',
-			design_link: '',
+			website_link: 'https://remotin.vercel.app/',
+			design_link:
+				'https://dribbble.com/shots/25575713-Remotin-Remote-Worker-Service-Provider-Landing-Page',
 			isActive: true
 		},
 		{
@@ -22,9 +23,10 @@
 			image: project_1,
 			title: 'Qether',
 			description:
-				'Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.',
-			website_link: '',
-			design_link: '',
+				'Experience skincare crafted to suit every type, concern, and lifestyle for all ages and every beautiful you.',
+			website_link: 'https://qether.vercel.app/',
+			design_link:
+				'https://www.behance.net/gallery/217637761/Qether-Skin-Care-Brand-Website-Brand-identity',
 			isActive: false
 		},
 		{
@@ -32,9 +34,9 @@
 			image: project_2,
 			title: 'Ascone',
 			description:
-				'Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.',
-			website_link: '',
-			design_link: '',
+				'Ascone can help you to manage and planning for your future with savings and investments. Ascone helps you get more from your money just in one app.',
+			website_link: 'https://ascone.pages.dev/',
+			design_link: 'https://dribbble.com/shots/23286378-Ascone-Finance-Landing-Page',
 			isActive: false
 		},
 		{
@@ -42,9 +44,10 @@
 			image: project_3,
 			title: 'Oram',
 			description:
-				'Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.',
-			website_link: '',
-			design_link: '',
+				'Our minimalist furniture features clean lines and functionality, enhancing any space with timeless, clutter-free pieces that create a calm, sophisticated atmosphere.',
+			website_link: 'https://oram-furniture.vercel.app/',
+			design_link:
+				'https://www.figma.com/proto/YeEuqcs9KcTxiStZRdUSkL/Furniture-website-design?node-id=255-6&t=hjTRPKTGh6vTW3UX-1&scaling=scale-down-width&content-scaling=fixed&page-id=255%3A5',
 			isActive: false
 		}
 	]);
@@ -105,10 +108,10 @@
 	}
 </script>
 
-<section>
+<section id="project">
 	<div class="border-stroke-default flex h-16 items-center justify-between border-y font-mono">
 		<h3
-			class="bg-stroke-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-nowrap text-[var(--white)]"
+			class="bg-stroke-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-nowrap text-white"
 		>
 			BEST PROJECTS
 			<svg
@@ -138,7 +141,7 @@
 		<a
 			href="/projects"
 			class="text-content-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-nowrap underline-offset-2 hover:underline"
-			>SEE ALL PROJECTS</a
+			>SEE ALL</a
 		>
 	</div>
 
@@ -164,9 +167,10 @@
 							</p>
 
 							<div class="mb-6 inline-flex items-center gap-6">
-								<a href={website_link} class="btn-accent">Live Website</a>
+								<a href={website_link} target="_blank" class="btn-accent">Live Website</a>
 								<a
 									href={design_link}
+									target="_blank"
 									class="text-content-default text-sm/none font-semibold tracking-tight underline-offset-2 hover:underline"
 									>Design link</a
 								>

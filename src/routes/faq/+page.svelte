@@ -5,39 +5,44 @@
 
 	let questions = $state([
 		{
-			question: 'What is Remotin ?',
-			answer: 'The quick brown fox jumps over the lazy dog.',
-			isActive: false
-		},
-		{
-			question: 'How do you vet remote workers ?',
-			answer: 'The quick brown fox jumps over the lazy dog.',
-			isActive: false
-		},
-		{
-			question: 'What types of roles can I hire for through Remotin ?',
-			answer: 'The quick brown fox jumps over the lazy dog.',
-			isActive: false
-		},
-		{
-			question: 'How quickly can I hire a remote worker ?',
+			question: 'What kind of work do you do?',
 			answer:
-				'Yes, absolutely! Hiring remote workers on a part-time or project basis is a very common and often advantageous practice. It offers flexibility for both the employer and the employee.',
+				'I specialize in converting any web design(figma, penpot, sketch etc) to webpages using svelte, webflow & framer',
+			isActive: false
+		},
+		{
+			question: 'What are your key skills?',
+			answer:
+				'I have front-end skills like svelte, webflow, framer, deployment to netlify, cloudflare pages, vps etc',
+			isActive: false
+		},
+		{
+			question: 'What is your experience level?',
+			answer: 'I have 1 year of experience in above skills.',
+			isActive: false
+		},
+		{
+			question: 'What is your development process?',
+			answer: `My development process for turning a Figma landing page design into a Svelte application is generally breaks down to five phases: 
+				Design Analysis & Planning, Component Development & Integration, Interactivity & Animation, Testing, Deoployment / Handover`,
 			isActive: true
 		},
 		{
-			question: 'Can I hire on a part-time or project basis ?',
-			answer: 'The quick brown fox jumps over the lazy dog.',
+			question: 'Do you offer revision?',
+			answer:
+				'Yes, I absolutely offer revisions as a standard part of my development process. But extra charges may apply after 2nd revision.',
 			isActive: false
 		},
 		{
-			question: 'What if I’m not satisfied with the remote worker?',
-			answer: 'The quick brown fox jumps over the lazy dog.',
+			question: 'What are your rates/fees/pricing?',
+			answer:
+				'My rates are typically project-based, as I find this provides the most clarity and value for my clients.The project pricing is depending on complexity, unique animations, responsiveness requirements, and the number of sections.',
 			isActive: false
 		},
 		{
-			question: 'Is there any ongoing support for managing remote workers ?',
-			answer: 'The quick brown fox jumps over the lazy dog.',
+			question: 'What technologies or tools do you use?',
+			answer:
+				'My tools & stacks are Figma, Framer, Notion, Claude, Svelte & Sveltekit, Motion.dev, Javascript, Google Analytics, Webflow, Slack, Stripe',
 			isActive: false
 		}
 	]);

@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="grid grid-cols-{tablist.length} border-stroke-default text-content-default border font-mono text-xs/none font-normal tracking-wider"
+	class="border-stroke-default text-content-default grid grid-cols-3 border font-mono text-xs/none font-normal tracking-wider"
 >
 	{#each tablist as tab, idx}
 		<button

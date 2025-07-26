@@ -12,7 +12,7 @@
 		<a
 			href="/"
 			class="hover:bg-primary border-stroke-default flex items-center border-l px-6 hover:text-[var(--text-btn)]"
-			>Dribble</a
+			>Discord</a
 		>
 		<a
 			href="/"

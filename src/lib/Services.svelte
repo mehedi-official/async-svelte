@@ -14,12 +14,11 @@
 	} from './TechLogos.svelte';
 
 	const services = [
-		'Product Design',
-		'User Research',
-		'Prototyping',
-		'Usability Testing',
-		'Visual Design',
-		'Interaction Design'
+		'Landing Page Development',
+		'Framer Development',
+		'Webflow Development',
+		'Svelte & Sveltekit Development',
+		'Figma to HTML, Svelte etc.'
 	];
 	const industries = [
 		'Healthcare',
@@ -51,7 +50,7 @@
 <section>
 	<div class="border-stroke-default h-16 border-y font-mono">
 		<h3
-			class="bg-stroke-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-[var(--white)]"
+			class="bg-stroke-default laptop:px-12 laptop:text-base/none laptop:tracking-wider inline-flex h-full items-center gap-2.5 px-4 text-sm/none font-normal tracking-tighter text-white"
 		>
 			SERVICES
 			<svg

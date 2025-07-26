@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
 	import { theme } from './theme.svelte';
 	type activePage = 'home' | 'projects' | 'faq' | 'contact';
 	type Props = {
@@ -11,6 +12,8 @@
 		{ name: 'projects', label: 'PROJECTS', href: 'projects' },
 		{ name: 'faq', label: 'FAQ', href: 'faq' }
 	]);
+	let isMenuOpen = $state.raw(false);
+
 	function changeTheme(themeName: string) {
 		if (themeName === 'light') {
 			theme.name = 'dark';
@@ -255,7 +258,11 @@
 			{/if}
 		</button>
 
-		<button class="laptop:hidden cursor-pointer px-4" aria-label="open menu">
+		<button
+			class="laptop:hidden cursor-pointer px-4"
+			aria-label="open menu"
+			onclick={() => (isMenuOpen = true)}
+		>
 			{#if theme.name === 'light'}
 				<svg
 					width="20"
@@ -320,3 +327,90 @@
 		</button>
 	</div>
 </nav>
+
+{#if isMenuOpen}
+	<section
+		transition:slide
+		class="laptop:hidden bg-surface-default border-stroke-default fixed top-0 right-0 left-0 z-20 border-y"
+	>
+		<div class="flex justify-end">
+			<button
+				class="cursor-pointer px-4 py-4"
+				aria-label="close menu"
+				onclick={() => (isMenuOpen = false)}
+			>
+				{#if theme.name === 'light'}
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M10.8752 10.8752L19.1248 19.1248"
+							stroke="#0D0D0D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M10.8752 19.1248L19.1248 10.8752"
+							stroke="#0D0D0D"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				{:else}
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M10.8752 10.8752L19.1248 19.1248"
+							stroke="#F5F5F5"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M10.8752 19.1248L19.1248 10.8752"
+							stroke="#F5F5F5"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				{/if}
+			</button>
+		</div>
+		<ul
+			class="text-content-default *:border-stroke-default flex flex-col items-center *:w-full *:border-t *:py-4 *:text-center"
+		>
+			{#each pages as page}
+				<li>
+					<a
+						href="/{page.href}"
+						class={[
+							'underline-offset-2 hover:underline',
+							page.name === activePage && 'underline underline-offset-2'
+						]}>{page.label}</a
+					>
+				</li>
+			{/each}
+			<li>
+				<a
+					href="/contact"
+					class={[
+						'underline-offset-2 hover:underline',
+						'contact' === activePage && 'underline underline-offset-2'
+					]}>CONTACT</a
+				>
+			</li>
+		</ul>
+	</section>
+{/if}
