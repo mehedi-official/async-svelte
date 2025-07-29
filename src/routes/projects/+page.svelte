@@ -7,7 +7,8 @@
 		[
 			'atacama',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/10527317/file/original-d38541285e75f6bf577d902857be69ca.png',
 				title: 'Atacama',
 				description: 'Climate Change Landing page',
 				website_link: '/',
@@ -17,7 +18,8 @@
 		[
 			'terraforma',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/18224382/file/original-bb9df7a88c8236bf2dadc0e901d09c3f.png',
 				title: 'Terraforma',
 				description: 'Architecture Company Landing page',
 				website_link: 'https://terraforma.pages.dev/',
@@ -28,7 +30,8 @@
 		[
 			'senayan',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/24538247/file/original-476ec69711246db762c00f29ee29c4ac.jpg',
 				title: 'Senayan',
 				description: 'Indonesian Restaurant Landing page',
 				website_link: 'https://senayan.vercel.app/',
@@ -39,7 +42,8 @@
 		[
 			'radiant',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/10638210/file/original-a428053be0cabdc99b06c1a4eb4d2b98.jpg',
 				title: 'Radiant',
 				description: 'Health Monitoring Dashboard',
 				website_link: 'https://health-dashboard.pages.dev/',
@@ -49,7 +53,8 @@
 		[
 			'scale',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/6646443/file/original-08ed80987d562acbe7f515416fb22459.png',
 				title: 'Scale',
 				description: 'Customer Onboarding for Financial Service',
 				website_link: '/',
@@ -59,7 +64,8 @@
 		[
 			'remotin',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/20758886/file/original-f8d81f7481082cc0af893ea6c8f1738f.png',
 				title: 'Remotin',
 				description: 'Remote worker provider Landing Page',
 				website_link: 'https://remotin.vercel.app/',
@@ -81,7 +87,8 @@
 		[
 			'ascone',
 			{
-				image: projectImg,
+				image:
+					'https://cdn.dribbble.com/userupload/12038805/file/original-95dcd60b18eab4dde248f54cc32d16e9.png',
 				title: 'Ascone',
 				description: 'Financial Institution Landing Page',
 				website_link: 'https://ascone.pages.dev/',

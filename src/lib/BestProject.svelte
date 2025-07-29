@@ -9,7 +9,8 @@
 	let projects = $state([
 		{
 			id: 'remotin',
-			image: project_0,
+			image:
+				'https://cdn.dribbble.com/userupload/20758886/file/original-f8d81f7481082cc0af893ea6c8f1738f.png',
 			title: 'Remotin',
 			description:
 				'Find talented professionals from around the world who are ready to help your business grow without geographical boundaries.',
@@ -31,7 +32,8 @@
 		},
 		{
 			id: 'ascone',
-			image: project_2,
+			image:
+				'https://cdn.dribbble.com/userupload/12038805/file/original-95dcd60b18eab4dde248f54cc32d16e9.png',
 			title: 'Ascone',
 			description:
 				'Ascone can help you to manage and planning for your future with savings and investments. Ascone helps you get more from your money just in one app.',
