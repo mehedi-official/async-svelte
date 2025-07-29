@@ -10,22 +10,26 @@
 		class="text-content-default laptop:flex hidden h-full text-sm/none font-normal tracking-wider"
 	>
 		<a
-			href="/"
+			target="_blank"
+			href="https://wa.me/message/IJOXY5AGHVQ4L1"
 			class="hover:bg-primary border-stroke-default flex items-center border-l px-6 hover:text-[var(--text-btn)]"
-			>Discord</a
+			>Whatsapp</a
 		>
 		<a
-			href="/"
+			target="_blank"
+			href="https://www.instagram.com/mehedi.maximal/"
 			class="hover:bg-primary border-stroke-default flex items-center border-l px-6 hover:text-[var(--text-btn)]"
 			>Instagram</a
 		>
 		<a
-			href="/"
+			target="_blank"
+			href="https://www.facebook.com/profile.php?id=61579010990923"
 			class="hover:bg-primary border-stroke-default flex items-center border-l px-6 hover:text-[var(--text-btn)]"
 			>Facebook</a
 		>
 		<a
-			href="/"
+			target="_blank"
+			href="https://x.com/mehedi_dev2"
 			class="hover:bg-primary border-stroke-default flex items-center border-l px-6 hover:text-[var(--text-btn)]"
 			>Twitter</a
 		>

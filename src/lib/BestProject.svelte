@@ -186,12 +186,13 @@
 		</section>
 
 		<section>
-			<div class="flex justify-end overflow-hidden">
+			<div class="flex aspect-[9/5] justify-end overflow-hidden">
 				{#key projects[activeProjectIdx].image}
 					<img
 						in:fly={{ y: '100%' }}
 						out:fly={{ y: '-100%' }}
 						src={projects[activeProjectIdx].image}
+						class="aspect-[9/5] object-cover"
 						alt="projects"
 					/>
 				{/key}
@@ -199,3 +200,5 @@
 		</section>
 	</section>
 </section>
+
+<!-- src={projects[activeProjectIdx].image} -->

@@ -2,9 +2,24 @@
 	import { mail, telegram, whatsapp } from './Icons.svelte';
 
 	const dmList = [
-		{ icon: mail, label: 'Email', linkText: 'Email me on Gmail', href: 'gmail.com' },
-		{ icon: whatsapp, label: 'Whatsapp', linkText: 'DM on Whatsapp', href: 'whatsapp.com' },
-		{ icon: telegram, label: 'Telegram', linkText: 'DM on Telegram', href: 'telegram.com' }
+		{
+			icon: mail,
+			label: 'Email',
+			linkText: 'Email me on Gmail',
+			href: 'mailto:mehedi.maximaldigitals@gmail.com'
+		},
+		{
+			icon: whatsapp,
+			label: 'Whatsapp',
+			linkText: 'DM on Whatsapp',
+			href: 'https://wa.me/message/IJOXY5AGHVQ4L1'
+		},
+		{
+			icon: telegram,
+			label: 'Telegram',
+			linkText: 'DM on Telegram',
+			href: 'https://t.me/mehedi_dev'
+		}
 	];
 </script>
 
@@ -21,6 +36,7 @@
 				<p class="text-base/none tracking-wider">{dm.label}</p>
 			</div>
 			<a
+				target="_blank"
 				href={dm.href}
 				class="group-hover:bg-primary border-stroke-default flex items-center justify-between border-t px-2.5 py-3 text-xs/none tracking-tight group-hover:text-[var(--text-btn)]"
 			>

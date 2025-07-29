@@ -1,12 +1,46 @@
 <script lang="ts">
-	import { mail, telegram, whatsapp } from './Icons.svelte';
+	import {
+		behance,
+		dribbble,
+		facebook,
+		instagram,
+		mail,
+		telegram,
+		twitter,
+		whatsapp
+	} from './Icons.svelte';
 
 	const social_media = [
-		{ icon: mail, label: 'Facebook', linkText: 'Visit My FB', href: 'gmail.com' },
-		{ icon: whatsapp, label: 'Twitter', linkText: 'Visit My Twitter', href: 'whatsapp.com' },
-		{ icon: telegram, label: 'Instagram', linkText: 'Visit My Instagram', href: 'telegram.com' },
-		{ icon: mail, label: 'Dribbble', linkText: 'Visit My Dribbble', href: 'telegram.com' },
-		{ icon: whatsapp, label: 'Behance', linkText: 'Visit My Behance', href: 'telegram.com' }
+		{
+			icon: facebook,
+			label: 'Facebook',
+			linkText: 'Visit My FB',
+			href: 'https://www.facebook.com/profile.php?id=61579010990923'
+		},
+		{
+			icon: twitter,
+			label: 'Twitter',
+			linkText: 'Visit My Twitter',
+			href: 'https://x.com/mehedi_dev2'
+		},
+		{
+			icon: instagram,
+			label: 'Instagram',
+			linkText: 'Visit My Instagram',
+			href: 'https://www.instagram.com/mehedi.maximal/'
+		},
+		{
+			icon: dribbble,
+			label: 'Dribbble',
+			linkText: 'Visit My Dribbble',
+			href: 'https://dribbble.com/mehediofficial'
+		},
+		{
+			icon: behance,
+			label: 'Behance',
+			linkText: 'Visit My Behance',
+			href: 'https://www.behance.net/mehediofficial'
+		}
 	];
 	// *:border-stroke-default *:nth-[3n+1]:border-stroke-default grid laptop:grid-cols-3 *:border-y *:border-r *:nth-[3n+1]:border-l *:nth-[n+4]:border-t-0
 </script>
@@ -24,6 +58,7 @@
 				<p class="text-base/none tracking-wider">{social.label}</p>
 			</div>
 			<a
+				target="_blank"
 				href={social.href}
 				class="group-hover:bg-primary border-stroke-default flex items-center justify-between border-t px-2.5 py-3 text-xs/none tracking-tight group-hover:text-[var(--text-btn)]"
 			>

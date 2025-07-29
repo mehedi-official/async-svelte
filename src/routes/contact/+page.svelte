@@ -36,7 +36,13 @@
 		class="border-stroke-default laptop:h-[calc(100dvh-64px)] laptop:grid-cols-2 grid overflow-hidden border-b"
 	>
 		<section class="relative">
-			<div class="h-full"><img src={contact_banner} class="h-full" alt="Contact Banner" /></div>
+			<div class="h-full">
+				<img
+					src="https://www.nineblaess.de/wp-content/uploads/2024/08/Free-business-card-mockup-by-Is-Graphics-1024x768.jpg"
+					class="h-full"
+					alt="Contact Banner"
+				/>
+			</div>
 
 			<h1
 				class="bg-primary laptop:ml-9 absolute top-0 left-0 mt-5 ml-4 inline-flex p-2 text-sm/none font-medium tracking-wider text-[var(--text-btn)]"
