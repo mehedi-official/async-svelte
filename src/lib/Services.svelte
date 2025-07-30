@@ -78,7 +78,7 @@
 		</h3>
 	</div>
 
-	<section class="mx-auto max-w-4xl px-4 py-16">
+	<section class="desktop:max-w-6xl mx-auto max-w-4xl px-4 py-16">
 		<p class="text-content-intense mb-8 text-base font-normal">
 			We design with intent - sharp, functional, and user-first. No fluff, just digital experiences
 			that feel right and work fast. From startups to market leaders, we've done this for over 10
