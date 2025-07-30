@@ -59,3 +59,7 @@
 		</section>
 	</section>
 </header>
+
+<svelte:head>
+	<title>Contact — Mehedi's Portfolio Website</title>
+</svelte:head>

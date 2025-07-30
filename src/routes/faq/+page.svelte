@@ -125,3 +125,7 @@
 		</section>
 	</section>
 </header>
+
+<svelte:head>
+	<title>FAQ — Mehedi's Portfolio Website</title>
+</svelte:head>

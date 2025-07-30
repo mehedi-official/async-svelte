@@ -25,6 +25,10 @@
     </div> -->
 </div>
 
+<svelte:head>
+	<title>Mehedi — Website Developer</title>
+</svelte:head>
+
 <!-- <div bind:this={root} data-theme={themeName} class="mx-16 mt-16 flex flex-col items-center">
     <AddTodo />
     <TodoList />

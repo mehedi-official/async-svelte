@@ -30,7 +30,7 @@
 	<div
 		class="border-stroke-default laptop:px-9 flex h-full items-center border-r px-4 text-xl/none font-normal"
 	>
-		Mehedi
+		<a href="/">Mehedi</a>
 	</div>
 
 	<ul class="laptop:flex hidden items-center gap-9 text-sm/none font-normal tracking-wider">

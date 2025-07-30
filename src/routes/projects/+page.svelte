@@ -152,3 +152,7 @@
 	</section>
 </header>
 <Footer />
+
+<svelte:head>
+	<title>Projects — Mehedi's Portfolio Website</title>
+</svelte:head>

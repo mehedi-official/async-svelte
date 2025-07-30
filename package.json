@@ -35,6 +35,8 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
+		"@fontsource-variable/geist": "^5.2.6",
+		"@fontsource-variable/geist-mono": "^5.2.6",
 		"svelte-5-french-toast": "^2.0.4"
 	}
 }

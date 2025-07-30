@@ -1,8 +1,8 @@
 <footer class="border-stroke-default flex h-16 items-center justify-between border-y font-mono">
 	<p class="text-content-intense laptop:px-6 px-4 text-sm font-normal tracking-tighter uppercase">
 		© All rights reserved {new Date().getFullYear()}. Made by
-		<span class="text-content-default cursor-pointer underline-offset-2 hover:underline"
-			>Mehedi Hasan</span
+		<button class="text-content-default cursor-pointer underline-offset-2 hover:underline" onclick={() => window.scrollTo(0, 0)}
+			>Mehedi Hasan</button
 		>
 	</p>
 
@@ -34,7 +34,7 @@
 			>Twitter</a
 		>
 
-		<a href="#" class="border-stroke-default bg-primary flex items-center border-l px-6">
+		<a aria-label="scroll to top" href="/#" class="border-stroke-default bg-primary flex items-center border-l px-6" onclick={(e) => { e.preventDefault(); window.scrollTo(0, 0) }}>
 			<svg
 				width="24"
 				height="24"
