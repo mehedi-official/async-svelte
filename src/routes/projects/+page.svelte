@@ -112,7 +112,7 @@
 <header>
 	<Navbar activePage="projects" />
 
-	<section class="laptop:px-6 px-4 pt-12 pb-24">
+	<section class="laptop:px-6 desktop:px-12 px-4 pt-12 pb-24">
 		<div class="mb-10">
 			<h1 class="text-content-default mb-2 text-5xl font-medium tracking-tight">Projects</h1>
 			<p class="text-content-intense max-w-108 text-base font-normal">
@@ -120,11 +120,11 @@
 			</p>
 		</div>
 
-		<section class="laptop:grid-cols-2 grid gap-x-4 gap-y-8">
+		<section class="laptop:grid-cols-2 desktop:gap-x-8 desktop:gap-y-16 grid gap-x-4 gap-y-8">
 			{#each projects as [id, project]}
 				<article class="grid gap-4">
-					<header>
-						<img class="aspect-[9/5.5] object-cover" src={project.image} alt={project.title} />
+					<header class="aspect-[9/5.5]">
+						<img class="h-full w-full object-cover" src={project.image} alt={project.title} />
 					</header>
 					<div class="laptop:flex-row laptop:items-center flex flex-col justify-between gap-4">
 						<div class="grid gap-1.5">

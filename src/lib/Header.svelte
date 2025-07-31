@@ -27,7 +27,7 @@
 	</div> -->
 
 	<section class="laptop:grid-cols-[1.35fr_1fr] grid">
-		<section class="laptop:p-12 px-4 py-12">
+		<section class="laptop:p-12 desktop:py-40 px-4 py-12">
 			<div class="mb-9 inline-grid gap-2 text-sm/none font-normal">
 				{#each information as [k, v]}
 					<div class="flex items-center gap-2">
@@ -49,7 +49,7 @@
 				</p>
 
 				<h1
-					class="text-content-default laptop:max-w-[80%] laptop:text-5xl/tight mb-5 text-4xl/snug font-semibold tracking-tighter"
+					class="text-content-default laptop:max-w-[80%] laptop:text-5xl/tight desktop:text-[4rem]/tight mb-5 text-4xl/snug font-semibold tracking-tighter"
 				>
 					I help businesses build world-class landing page & websites using Svelte, Framer, Webflow
 				</h1>
@@ -59,8 +59,12 @@
 		</section>
 
 		<section class="border-stroke-default border-l">
-			<div>
-				<img src={banner} alt="Banner" class="min-h-118 object-cover" />
+			<div class=" desktop:aspect-[2/1.75]">
+				<img
+					src={banner}
+					alt="Banner"
+					class="desktop:w-full desktop:h-full min-h-118 object-cover"
+				/>
 			</div>
 
 			<article
