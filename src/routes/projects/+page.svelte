@@ -76,7 +76,7 @@
 		[
 			'qether',
 			{
-				image: projectImg,
+				image: "https://cdn.dribbble.com/userupload/44318964/file/b5dde35a25657a6fe1ac745b3010184f.jpg",
 				title: 'Qether',
 				description: 'Skin & Beauticare Landing Page',
 				website_link: 'https://qether.vercel.app/',
@@ -98,7 +98,7 @@
 		[
 			'oram',
 			{
-				image: projectImg,
+				image: "https://cdn.dribbble.com/userupload/44319164/file/5811ab9bf2037101bcd930bbe5f3d6bb.jpg",
 				title: 'Oram',
 				description: 'Furniture Landing Page',
 				website_link: 'https://oram-furniture.vercel.app/',

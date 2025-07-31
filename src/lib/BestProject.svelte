@@ -21,7 +21,7 @@
 		},
 		{
 			id: 'qether',
-			image: project_1,
+			image: "https://cdn.dribbble.com/userupload/44318964/file/b5dde35a25657a6fe1ac745b3010184f.jpg",
 			title: 'Qether',
 			description:
 				'Experience skincare crafted to suit every type, concern, and lifestyle for all ages and every beautiful you.',
@@ -43,7 +43,7 @@
 		},
 		{
 			id: 'oram',
-			image: project_3,
+			image: "https://cdn.dribbble.com/userupload/44319164/file/5811ab9bf2037101bcd930bbe5f3d6bb.jpg",
 			title: 'Oram',
 			description:
 				'Our minimalist furniture features clean lines and functionality, enhancing any space with timeless, clutter-free pieces that create a calm, sophisticated atmosphere.',
