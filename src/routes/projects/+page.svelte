@@ -3,18 +3,19 @@
 	import Navbar from '$lib/Navbar.svelte';
 	import projectImg from '$lib/assets/project.png';
 
+	const atacama = [
+		'atacama',
+		{
+			image:
+				'https://cdn.dribbble.com/userupload/10527317/file/original-d38541285e75f6bf577d902857be69ca.png',
+			title: 'Atacama',
+			description: 'Climate Change Landing page',
+			website_link: '/',
+			design_link: 'https://dribbble.com/shots/22733005-Climate-Change-Website'
+		}
+	];
+
 	let projects = new Map([
-		[
-			'atacama',
-			{
-				image:
-					'https://cdn.dribbble.com/userupload/10527317/file/original-d38541285e75f6bf577d902857be69ca.png',
-				title: 'Atacama',
-				description: 'Climate Change Landing page',
-				website_link: '/',
-				design_link: 'https://dribbble.com/shots/22733005-Climate-Change-Website'
-			}
-		],
 		[
 			'terraforma',
 			{
@@ -57,7 +58,7 @@
 					'https://cdn.dribbble.com/userupload/6646443/file/original-08ed80987d562acbe7f515416fb22459.png',
 				title: 'Scale',
 				description: 'Customer Onboarding for Financial Service',
-				website_link: '/',
+				website_link: 'https://scale-onboarding.pages.dev',
 				design_link: 'https://dribbble.com/shots/21333133-Scale-Customer-Onboarding'
 			}
 		],
@@ -76,7 +77,8 @@
 		[
 			'qether',
 			{
-				image: "https://cdn.dribbble.com/userupload/44318964/file/b5dde35a25657a6fe1ac745b3010184f.jpg",
+				image:
+					'https://cdn.dribbble.com/userupload/44318964/file/b5dde35a25657a6fe1ac745b3010184f.jpg',
 				title: 'Qether',
 				description: 'Skin & Beauticare Landing Page',
 				website_link: 'https://qether.vercel.app/',
@@ -98,7 +100,8 @@
 		[
 			'oram',
 			{
-				image: "https://cdn.dribbble.com/userupload/44319164/file/5811ab9bf2037101bcd930bbe5f3d6bb.jpg",
+				image:
+					'https://cdn.dribbble.com/userupload/44319164/file/5811ab9bf2037101bcd930bbe5f3d6bb.jpg',
 				title: 'Oram',
 				description: 'Furniture Landing Page',
 				website_link: 'https://oram-furniture.vercel.app/',

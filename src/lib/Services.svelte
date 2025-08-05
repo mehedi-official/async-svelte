@@ -80,9 +80,9 @@
 
 	<section class="desktop:max-w-6xl mx-auto max-w-4xl px-4 py-16">
 		<p class="text-content-intense mb-8 text-base font-normal">
-			I design with intent that is - sharp, functional, and user-first. No fluff, just digital experiences
-			that feel right and work fast. From startups to market leaders, I've done this for over 1
-			years for companies in a wide range of categories, using the best and latest tools.
+			I design with intent that is - sharp, functional, and user-first. No fluff, just digital
+			experiences that feel right and work fast. From startups to market leaders, I've done this for
+			over 1 years for companies in a wide range of categories, using the best and latest tools.
 		</p>
 
 		<div class="laptop:gap-10 grid gap-16">
